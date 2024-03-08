@@ -1,0 +1,107 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+html{
+    font-family: 'fw-400';
+    font-size: 14px;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+    color: $black-color;
+}
+body{
+  padding: 0;
+  margin: 0;
+}
+.prevent-scroll{
+  overflow: hidden;
+}
+// .wrapper{
+// //  overflow: hidden;
+// }
+.container{
+  max-width: 1400px;
+  // width: 1440px;
+  width: 1210px !important;
+  margin: auto;
+}
+@media (max-width: 1490px) {
+  .container{
+    width: 1150px;
+    max-width: 1150px;
+  }
+}
+@media (max-width: 1200px) {
+  .container{
+    width: 960px;
+    max-width: 960px;
+  }
+}
+@media (max-width: 1023px) {
+  .container{
+    width: calc(100% - 120px);
+    max-width: calc(100% - 120px);
+  }
+}
+@media (max-width: 739px) {
+  .container{
+    width: calc(100% - 50px);
+    max-width: calc(100% - 50px);
+  }
+}
+
+// tablet - mobile
+@media (max-width: 1023px){
+  .hide-on-mobile-tablet{
+      display: none !important;
+  }
+}
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px){
+  .hide-on-tablet{
+      display: none !important;
+  }
+}
+/* Mobile */
+@media (max-width: 739px){
+  .hide-on-mobile{
+      display: none !important;
+  }
+}
+
+@include tablet-mobile {
+  .sm-Dis-none {
+    display: none !important;
+  }
+}
+@include mobile {
+  .sm-Dis-none {
+    display: none !important;
+  }
+  .mt-sm {
+    margin-top: 64px;
+  }
+
+  // Config Padding Mobile
+  .aboutUs-wrapper,
+  .services-wrapper,
+  .servicesSingle-wrapper,
+  .pricing-wrapper,
+  .blog-wrapper ,
+  .blog-details-wrapper,
+  .project-wrapper,
+  .projectDetails-wrapper,
+  .team-wrapper,
+  .teamSingle-wrapper,
+  .FAQ-wrapper,
+  .contactUs-wrapper  {
+    padding: 0 16px !important;
+  }
+}
+.main {
+  @include mobile {
+    overflow: hidden !important;
+  }
+}

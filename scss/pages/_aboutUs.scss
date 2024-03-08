@@ -1,0 +1,396 @@
+@import "../base/font";
+@import "../abstracts/variable";
+@import "../abstracts/minxin";
+
+.accordion {
+   margin-top: 66px !important;
+   max-height: 356px;
+   position: relative;
+
+   @include tablet-mobile {
+      display: none;
+   }
+
+   .slide-wrapper {
+      margin: 0 !important;
+      padding: 0 !important;
+      display: flex;
+      justify-content: center;
+      column-gap: 17px;
+      overflow: hidden;
+      // position: relative;
+      .slide {
+         position: relative;
+         // width: 150px;
+         min-width: 120px;
+         width: auto;
+         height: 356px;
+         transition: all 0.5s ease;
+         overflow: hidden;
+         img {
+            width: 100%;
+            height: 100%;
+            // object-fit: cover;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            // background-color: red;
+         }
+
+         .content {
+            position: absolute;
+            z-index: 1;
+            top: 70%;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            opacity: 0;
+            p {
+               color: #fff;
+               text-align: center;
+               text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+               @include fontDMSerif400;
+               font-size: 70px;
+               font-style: normal;
+               font-weight: 400;
+               line-height: 125%;
+            }
+         }
+      }
+      .slide:nth-child(4).activeOpen {
+         width: 100%;
+         max-width: 1210px !important;
+         height: 356px;
+         flex-shrink: 0;
+         cursor: pointer;
+         position: relative;
+      }
+      .slide::before,
+      .slide::after {
+         position: absolute;
+         content: "";
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+      }
+      .slide::before {
+         // background: linear-gradient(to bottom, transparent, #1772f1c9);
+         background-color: rgba(51, 51, 51, 0.5);
+         opacity: 0;
+         transition: all 0.5s ease;
+      }
+      .slide::after {
+         opacity: 1;
+         // background-color: rgba(51, 51, 51, .7);
+         transition: all 0.5s ease;
+      }
+      .slide:nth-child(4).activeOpen:before {
+         opacity: 1;
+      }
+      .slide:nth-child(4).activeOpen::after {
+         opacity: 0;
+      }
+      .slide:nth-child(4).activeOpen .content {
+         opacity: 1;
+         top: 45%;
+         transition: all 0.3s ease 0.3s;
+      }
+   }
+   .buttons {
+      position: absolute;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      justify-content: space-between;
+      button {
+         outline: none;
+         border: none;
+         background-color: transparent;
+         color: #fff;
+         font-weight: bolder;
+         font-size: 76px;
+      }
+   }
+   ul.dots {
+      position: absolute;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      bottom: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      justify-content: center;
+      li {
+         list-style: none;
+         color: #fff;
+         width: 12px;
+         height: 12px;
+         background-color: #fff;
+         margin: 0px 20px;
+         border-radius: 20px;
+         cursor: pointer;
+         &.active {
+            width: 40px;
+         }
+      }
+   }
+}
+.swiper-slide-wrapper {
+   margin-top: -50px;
+   display: none;
+   @include tablet-mobile {
+      display: block;
+   }
+}
+swiper-container {
+   width: 100%;
+   height: 100%;
+}
+
+swiper-slide {
+   text-align: center;
+   font-size: 18px;
+   background: #fff;
+   // display: flex;
+   // justify-content: center;
+   // align-items: center;
+   height: 200px;
+   background: linear-gradient(90deg, rgba(9, 28, 121, 1) 0%, rgba(255, 0, 194, 1) 100%);
+}
+.swiper-button-next svg,
+.swiper-button-prev svg {
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+   transform-origin: center;
+   color: #fff !important;
+   font-weight: bolder;
+}
+swiper-slide img {
+   display: block;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+swiper-container {
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.main {
+   .aboutUs-wrapper {
+      .think-feel {
+         margin-top: 133px;
+         text-align: center;
+         display: flex;
+         justify-content: center;
+         @include tablet-mobile {
+            margin-top: 30px;
+         }
+         @include mobile {
+            margin-top: 133px;
+         }
+         &-wrap {
+            width: 760px;
+            border-right: 2px solid #000;
+            border-left: 2px solid #000;
+
+            @include tablet-mobile {
+               border: none !important;
+            }
+            .comment {
+               color: #292f36;
+               text-align: center;
+               @include fontDMSerif400;
+               font-size: 35px;
+               font-style: normal;
+               line-height: 125%;
+               letter-spacing: 0.7px;
+               @include tablet-mobile {
+                  font-size: 18px;
+                  letter-spacing: 0.36px;
+               }
+            }
+            .author {
+               margin-top: 34px;
+               color: #4d5053;
+               text-align: center;
+               font-size: 25px;
+               font-style: normal;
+               line-height: 150%;
+               @include fontJost400;
+               letter-spacing: 0.25px;
+            }
+         }
+      }
+
+      .section-content {
+         margin-top: 135px;
+         @include tablet-mobile {
+            margin-top: 32px !important;
+         }
+         &-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            column-gap: 40px;
+            @include tablet-mobile {
+               flex-wrap: wrap;
+               justify-content: start;
+               margin-top: 32px;
+               &:nth-child(n + 2) {
+                  margin-top: 32px;
+               }
+            }
+            &__text {
+               @include mobile {
+                  margin-top: 40px;
+               }
+               .title {
+                  color: #292f36;
+                  @include fontDMSerif400;
+                  font-size: 50px;
+                  font-style: normal;
+                  line-height: 125%;
+                  letter-spacing: 1px;
+               }
+               .content {
+                  margin-top: 23px;
+                  color: #4d5053;
+                  @include fontJost400;
+                  font-size: 22px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: 150%;
+                  letter-spacing: 0.22px;
+               }
+               button {
+                  padding: 25px 40px;
+                  margin-top: 41px;
+                  border-radius: 18px;
+                  background: #292f36;
+                  box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35);
+                  @include fontJost400;
+                  color: #fff;
+                  text-align: center;
+                  font-size: 18px;
+                  font-style: normal;
+                  font-weight: 500;
+                  line-height: 125%;
+                  letter-spacing: 0.36px;
+                  i {
+                     font-size: 21px;
+                  }
+               }
+            }
+            img {
+               max-width: 720px;
+               height: 500px;
+
+               @include tablet-mobile {
+                  margin-top: 32px;
+                  width: 100%;
+               }
+               @media screen and (max-width: 1024px) {
+                  margin-top: 32px;
+                  // width: 100%;
+                  max-width: 100%;
+                  height: auto;
+               }
+            }
+            img.sm-Dis-none {
+               display: none;
+               @include mobile {
+                  display: block;
+               }
+            }
+         }
+      }
+
+      .form-contact {
+         margin-top: 296px;
+         text-align: center;
+         @include tablet-mobile {
+            margin-top: 32px;
+         }
+         .title {
+            @include FontDMSerifTitle;
+            @include mobile {
+               font-size: 32px;
+               font-style: normal;
+               font-weight: 400;
+               line-height: 125%;
+               letter-spacing: 0.64px;
+            }
+         }
+         &-top {
+            margin-top: 98px;
+            display: flex;
+            justify-content: space-between;
+            @include mobile {
+               margin-top: 48px;
+               flex-wrap: wrap;
+               row-gap: 32px;
+            }
+            input {
+               width: 473px;
+               border: none;
+               outline: none;
+               border-bottom: 1px solid #000;
+               @include FontJostText;
+               font-size: 30px;
+               letter-spacing: 0.3px;
+               @include mobile {
+                  width: 100%;
+               }
+            }
+         }
+         .inpt-bottom {
+            padding-top: 235px;
+            width: 100%;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid #000;
+            @include FontJostText;
+            font-size: 30px;
+            letter-spacing: 0.3px;
+            @include mobile {
+               margin-top: 32px;
+               padding: 0;
+            }
+         }
+         button {
+            margin-top: 51px;
+            margin-bottom: 380px;
+            height: 75px;
+            padding: 26px 54px;
+            border-radius: 18px;
+            background: #292f36;
+            box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35);
+            @include fontJost400;
+            color: #fff;
+            text-align: center;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 125%;
+            letter-spacing: 0.36px;
+            @include tablet-mobile {
+               margin-bottom: 32px;
+            }
+            i {
+               font-size: 23px;
+               font-weight: bolder;
+               color: #cda274;
+            }
+         }
+      }
+   }
+}

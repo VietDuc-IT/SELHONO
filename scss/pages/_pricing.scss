@@ -1,0 +1,92 @@
+@import "../base/font";
+@import "../abstracts/variable";
+@import "../abstracts/minxin";
+
+.pricing-banner {
+   background-image: url("/img/Pricing/Banner.svg");
+   @include commonBannerStyles;
+}
+.main {
+   .pricing-wrapper {
+      margin-top: 183px;
+      margin-bottom: 210px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      @include mobile {
+         padding-top: 80px;
+      }
+      .pricing-item {
+         text-align: center;
+         @include mobile {
+            &:not(:first-child) {
+               margin-top: 180px;
+            }
+            width: 100%;
+         }
+         .title {
+            @include fontDMSerif400;
+            color: #292f36;
+            font-size: 25px;
+            font-style: normal;
+            line-height: 150%;
+            letter-spacing: 0.25px;
+         }
+         .price {
+            @include FontDMSerifTitle;
+            font-size: 25px;
+            letter-spacing: 0.25px;
+            span {
+               @include FontDMSerifTitle;
+               font-size: 85px;
+               letter-spacing: 0.85px;
+            }
+         }
+         ul {
+            text-align: center;
+            list-style-type: none;
+            padding-left: 0px !important;
+            li {
+               @include FontJostText;
+               font-size: 20px;
+               line-height: 250%;
+               letter-spacing: 0.2px;
+            }
+         }
+         button {
+            @include BtnBlack;
+         }
+      }
+      .popular {
+         margin-top: 22px;
+         padding: 10px 38px;
+         background-color: #cda274;
+         border-radius: 18px;
+         color: #fff;
+         @include fontJost400;
+         font-size: 18px;
+         font-style: normal;
+         font-weight: 600;
+         line-height: 125%;
+         letter-spacing: 0.36px;
+         width: 60%;
+         margin: 0 auto;
+      }
+      .pricing-item:nth-child(odd) .popular {
+         opacity: 0;
+      }
+      .pricing-item.active {
+         .price {
+            span {
+               color: #cda274;
+            }
+         }
+         button {
+            background-color: #cda274;
+            outline: none;
+            border: none;
+         }
+      }
+      // end of servicesSingle
+   }
+}

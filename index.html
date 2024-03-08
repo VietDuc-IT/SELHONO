@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/x-icon" href="img/SELHONO_LOGO.png" />
+  <title>SELHONO - Trang chủ</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lity/2.4.1/lity.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  <link rel="stylesheet" href="scss/main.css" />
+
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- ===== Boxicons CSS ===== -->
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- bootstrap icon cdn -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+  <script src="js/jquery.zaccordion.js"></script>
+</head>
+
+<body>
+  <div class="modal"></div>
+  <div class="loading"></div>
+  <div class="wrapper">
+    <!-- HEADER: START -->
+    <header class="header">
+      <nav>
+        <div class="nav-bar container">
+          <i class='bx bx-menu sidebarOpen' id="menuToggle"></i>
+          <div class="logo navLogo navLogo-sm">
+            <img src="img/SELHONO_LOGO.png" alt="">
+            <a href="index.html">SELHONO</a>
+          </div>
+
+          <div class="wrapper-nav">
+            <div class="menu">
+              <div class="logo-toggle">
+                <div class="logo navLogo">
+                  <img src="img/SELHONO_LOGO.png" alt="">
+                  <!-- <a href="index.html">SELHONO</a> -->
+                  <a href="index.html">SELHONO</a>
+                </div>
+                <i class='bx bx-x siderbarClose'></i>
+              </div>
+
+              <div class="search-sm">
+                <form action="" class="form-search-sm">
+                  <input type="text" placeholder="Search...">
+                  <i class='bx bx-search'></i>
+                </form>
+              </div>
+
+              <ul class="nav-links">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="project.html">Project</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contactUs.html">Contact</a></li>
+              </ul>
+            </div>
+
+            <div class="darkLight-searchBox">
+              <div class="searchBox">
+                <div class="searchToggle">
+                  <i class='bx bx-x cancel'></i>
+                  <i class='bx bx-search search'></i>
+                </div>
+
+                <div class="search-field">
+                  <input type="text" placeholder="Search...">
+                  <i class='bx bx-search'></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- HEADER: END -->
+
+    <a href="#" class="scroll-top">
+      <i class="bi bi-arrow-up-short"></i>
+    </a>
+
+    <main class="main container">
+      <div class="banner">
+        <div class="banner-wrap">
+          <p class="solgan">Let's make your <br>
+            home beautiful together</p>
+          <p class="small-desc">There are many variations of the passages <br>
+            of lorem Ipsum fromavailable, majority.</p>
+          <a class="btn-main">Get Started <i class="bi bi-arrow-right ms-3"></i></a>
+        </div>
+      </div>
+
+      <div class="info-block">
+        <div class="row info-block-wrap">
+          <div class="col-4 info-block__item" data-aos="slide-up" data-aos-duration="800">
+            <p class="title">Project Plan</p>
+            <p>There are many variations of the passages of Lorem Ipsum available, majority.</p>
+            <a href="aboutUs.html">Read More <i class="bi bi-arrow-right ms-3"></i></a>
+          </div>
+          <div class="col-4 info-block__item" data-aos="slide-up" data-aos-duration="1000">
+            <p class="title">Interior Work</p>
+            <p>There are many variations of the passages of Lorem Ipsum available, majority.</p>
+            <a href="aboutUs.html">Read More <i class="bi bi-arrow-right ms-3"></i></a>
+          </div>
+          <div class="col-4 info-block__item" data-aos="slide-up" data-aos-duration="1200">
+            <p class="title">Realization</p>
+            <p>There are many variations of the passages of Lorem Ipsum available, majority.</p>
+            <a href="aboutUs.html">Read More <i class="bi bi-arrow-right ms-3"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="banner-contact">
+        <p class="solgan" data-aos="slide-up" data-aos-duration="800">We create art <br>
+          for modern life</p>
+        <p class="small-desc" data-aos="slide-up" data-aos-duration="1000">There are many variations of the passages
+          <br>
+          of lorem Ipsum fromavailable, majority.
+        </p>
+        <div class="contact-info" data-aos="slide-up" data-aos-duration="1100">
+          <div class="contact-info__item">
+            <i class="bi bi-telephone"></i>
+            <p class="ms-4">0123456789 <br> <span>Call Us Anytime</span></p>
+          </div>
+          <a class="btn-main" data-aos="slide-up" data-aos-duration="1200">Get Free Estimate <i
+              class="bi bi-arrow-right ms-3"></i></a>
+        </div>
+      </div>
+
+      <div class="people-thoughts-block" id="smooth-wrapper" data-aos="fade-up" data-aos-duration="1000">
+        <div class="row people-thoughts-block-wrap" id="smooth-content">
+          <p class="text-center title">What the People Thinks <br> About Us</p>
+          <div class="col-4 people-thoughts-block__item" data-aos="fade-up" data-aos-duration="600">
+            <div class="info">
+              <div class="info-heading">
+                <img src="img/Avatar/user1.jpg" alt="">
+                <p class="name">Natasha <br> <span>Moscow, Russia</span></p>
+              </div>
+              <p class="desc">Lorem Ipsum is simply dummy text of the typesetting industry. Ipsum has been.</p>
+            </div>
+          </div>
+          <div class="col-4 people-thoughts-block__item" data-aos="fade-up" data-aos-duration="600">
+            <div class="info">
+              <div class="info-heading">
+                <img src="img/Avatar/user2.jpg" alt="">
+                <p class="name">Raymond Galario <br> <span>UK, London</span></p>
+              </div>
+              <p class="desc">Lorem Ipsum is simply dummy
+                text of the typesetting industry.
+                Ipsum has been scrambled it
+                to make a type book.</p>
+            </div>
+          </div>
+          <div class="col-4 people-thoughts-block__item" data-aos="fade-up" data-aos-duration="600">
+            <div class="info">
+              <div class="info-heading">
+                <img src="img/Avatar/user3.jpg" alt="">
+                <p class="name">Benny Roll <br> <span>USA, New York</span></p>
+              </div>
+              <p class="desc">Lorem Ipsum is simply dummy
+                text of the typesetting industry.
+                Ipsum has been scrambled.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sponsor" style="display: none;">
+        <a href="#">
+          <img src="img/HOME/sponsor1.png" alt="">
+        </a>
+        <a href="#">
+          <img src="img/HOME/sponsor2.png" alt="">
+        </a>
+        <a href="#">
+          <img src="img/HOME/sponsor3.png" alt="">
+        </a>
+        <a href="#" class="sponsor-left">
+          <img src="img/HOME/sponsor4.png" alt="">
+        </a>
+      </div>
+
+      <div class="logos">
+        <div class="logos-slide">
+          <img src="img/HOME/sponsor1.png" alt="">
+          <img src="img/HOME/sponsor2.png" alt="">
+          <img src="img/HOME/sponsor3.png" alt="">
+          <img src="img/HOME/sponsor4.png" alt="">
+          <img src="img/HOME/sponsor1.png" alt="">
+          <img src="img/HOME/sponsor2.png" alt="">
+          <img src="img/HOME/sponsor3.png" alt="">
+          <img src="img/HOME/sponsor4.png" alt="">
+        </div>
+
+        <div class="logos-slide">
+          <img src="img/HOME/sponsor1.png" alt="">
+          <img src="img/HOME/sponsor2.png" alt="">
+          <img src="img/HOME/sponsor3.png" alt="">
+          <img src="img/HOME/sponsor4.png" alt="">
+          <img src="img/HOME/sponsor1.png" alt="">
+          <img src="img/HOME/sponsor2.png" alt="">
+          <img src="img/HOME/sponsor3.png" alt="">
+          <img src="img/HOME/sponsor4.png" alt="">
+        </div>
+      </div>
+
+      <div class="appeal" data-aos="slide-up" data-aos-duration="1000">
+        <p class="appeal-title">Follow Our Projects</p>
+        <p class="appeal-content">It is a long established fact that a reader will be distracted by the of readable
+          content of page lookings at its layouts <br> points.</p>
+
+        <p class="appeal-content-sm">It is a long established fact that a reader will be distracted by the of readable
+          content of page lookings at its layouts points.</p>
+      </div>
+
+      <div class="list-bedRoom">
+        <div class="list-bedRoom-container">
+          <div class="list-bedRoom-item" data-aos="slide-up" data-aos-duration="850">
+            <img src="img/HOME/Room1.png" alt="" class="img-room">
+            <div class="list-bedRoom-item__inner">
+              <div class="content">
+                <p>Modern bedroom</p>
+                <span>Decor / Artchitecture</span>
+              </div>
+              <a href="#" class="btn-main-circle"><i class="bi bi-chevron-right"></i></a>
+            </div>
+          </div>
+          <div class="list-bedRoom-item" data-aos="slide-up" data-aos-duration="1000">
+            <img src="img/HOME/Room2.png" alt="" class="img-room">
+            <div class="list-bedRoom-item__inner">
+              <div class="content">
+                <p>Modern bedroom</p>
+                <span>Decor / Artchitecture</span>
+              </div>
+              <a href="#" class="btn-main-circle"><i class="bi bi-chevron-right"></i></a>
+            </div>
+          </div>
+          <div class="list-bedRoom-item" data-aos="slide-up" data-aos-duration="850">
+            <img src="img/HOME/Room1.png" alt="" class="img-room">
+            <div class="list-bedRoom-item__inner">
+              <div class="content">
+                <p>Modern bedroom</p>
+                <span>Decor / Artchitecture</span>
+              </div>
+              <a href="#" class="btn-main-circle"><i class="bi bi-chevron-right"></i></a>
+            </div>
+          </div>
+          <div class="list-bedRoom-item" data-aos="slide-up" data-aos-duration="1000">
+            <img src="img/HOME/Room2.png" alt="" class="img-room">
+            <div class="list-bedRoom-item__inner">
+              <div class="content">
+                <p>Modern bedroom</p>
+                <span>Decor / Artchitecture</span>
+              </div>
+              <a href="#" class="btn-main-circle"><i class="bi bi-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="fun-fact" data-aos="zoom-in-up" data-aos-duration="1000">
+        <div class="fun-fact-item">
+          <div class="fun-fact-item__inner">
+            <p class="numbCount" data-value="12">12</p>
+            <span>Years Of Experiance</span>
+          </div>
+        </div>
+        <span class="splash"></span>
+        <div class="fun-fact-item">
+          <div class="fun-fact-item__inner">
+            <p class="numbCount" data-value="1074">1074</p>
+            <span>Success Project</span>
+          </div>
+        </div>
+        <span class="splash splash-sm"></span>
+        <div class="fun-fact-item">
+          <div class="fun-fact-item__inner">
+            <p class="numbCount" data-value="98">98</p>
+            <span>Active Project</span>
+          </div>
+        </div>
+        <span class="splash"></span>
+        <div class="fun-fact-item">
+          <div class="fun-fact-item__inner">
+            <p class="numbCount" data-value="583">583</p>
+            <span>Happy Customers</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="appeal appeal-custom" data-aos="slide-up" data-aos-duration="1000">
+        <p class="appeal-title">Articles & News</p>
+        <p class="appeal-content appeal-content-custom">It is a long established fact that a reader will be distracted
+          by the of readable content of a page when lookings at its layouts the <br> points of using.</p>
+        <p class="appeal-content-sm">It is a long established fact that a reader will be distracted by the of readable
+          content of page lookings at its layouts points.</p>
+      </div>
+
+      <div class="list-areaRoom-design">
+        <div class="areaRoom-design-item" data-aos="slide-up" data-aos-duration="800">
+          <div class="areaRoom-design-item__img">
+            <span class="shortDesc">Kitchen Design</span>
+          </div>
+          <div class="areaRoom-design-item__inner">
+            <p>
+              Let’s Get Solution For <br> Building Construction <br> Work
+            </p>
+            <div class="areaRoom-design-item__inner-footer">
+              <span>26 December,2022</span>
+              <a href="#" class="btn-main-circle"><i class="bi bi-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="areaRoom-design-item" data-aos="slide-up" data-aos-duration="1000">
+          <div class="areaRoom-design-item__img">
+            <span class="shortDesc">Living Design</span>
+          </div>
+          <div class="areaRoom-design-item__inner">
+            <p>
+              Low Cost Latest Invented <br> Interior Designing <br>
+              Ideas.
+            </p>
+            <div class="areaRoom-design-item__inner-footer">
+              <span>22 November,2023 </span>
+              <a href="#" class="btn-main-circle"><i class="bi bi-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="areaRoom-design-item" data-aos="slide-up" data-aos-duration="1200">
+          <div class="areaRoom-design-item__img">
+            <span class="shortDesc">Interior Design</span>
+          </div>
+          <div class="areaRoom-design-item__inner">
+            <p>
+              Best For Any Office & <br> Business Interior <br>
+              Solution
+            </p>
+            <div class="areaRoom-design-item__inner-footer">
+              <span>4 December,2023</span>
+              <a href="#" class="btn-main-circle"><i class="bi bi-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="height: fit-content;"></div>
+    </main>
+
+    <div class="banner-footer container-fluid">
+      <div class="banner-footer-content">
+        <p class="title" data-aos="fade-up" data-aos-duration="1200">Wanna join the interno?</p>
+        <p class="desc mb-5" data-aos="fade-up" data-aos-duration="1400">It is a long established fact will be
+          distracted.</p>
+        <a class="btn-main" data-aos="fade-down" data-aos-duration="1000">Contact With Us <i
+            class="bi bi-arrow-right ms-3"></i></a>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__inner-socails">
+            <a href="index.html">
+              <div class="logo">
+                <div class="img">
+                  <img src="img/SELHONO_LOGO.png" alt="">
+                </div>
+                <span>SELHONO</span>
+              </div>
+            </a>
+            <p class="slogan">
+              It is a long established fact that a reader <br> will be distracted lookings.
+            </p>
+            <div class="footer__inner-socails-icons">
+              <a href="#">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a href="#">
+                <i class="bi bi-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="bi bi-linkedin"></i>
+              </a>
+              <a href="#">
+                <i class="bi bi-instagram"></i>
+              </a>
+            </div>
+          </div>
+          <div class="footer__inner-pages">
+            <a href="#">
+              <p class="title">Pages</p>
+            </a>
+            <a href="aboutUs.html">
+              <p>About Us</p>
+            </a>
+            <a href="project.html">
+              <p>Our Projects</p>
+            </a>
+            <a href="team.html">
+              <p>Our Team</p>
+            </a>
+            <a href="contactUs.html">
+              <p>Contact Us</p>
+            </a>
+            <a href="services.html">
+              <p>Services</p>
+            </a>
+          </div>
+          <div class="footer__inner-services">
+            <a href="services.html">
+              <p class="title">Services</p>
+            </a>
+            <a href="#">
+              <p>Kitchen</p>
+            </a>
+            <a href="#">
+              <p>Living Area</p>
+            </a>
+            <a href="#">
+              <p>Bathroom</p>
+            </a>
+            <a href="#">
+              <p>Dinning Hall</p>
+            </a>
+            <a href="#">
+              <p>Bedroom</p>
+            </a>
+          </div>
+          <div class="footer__inner-contact">
+            <a href="contactUs.html">
+              <p class="title">Contact</p>
+            </a>
+            <a href="https://maps.app.goo.gl/2HuUwUGxPSUb4TbXA">
+              <p>55 East Birchwood Ave. <br> Brooklyn, New York 11201</p>
+            </a>
+            <a href="mailto:contact@selhono.com">
+              <p>contact@selhono.com</p>
+            </a>
+            <a href="tel:+1234567890">
+              <p>(123) 456 - 7890</p>
+            </a>
+          </div>
+        </div>
+        <p class="copyright">Copyright © SELHONO </p>
+      </div>
+    </footer>
+  </div>
+  <script src="js/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lity/2.4.1/lity.min.js"></script>
+  <script src="js/anime.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- scroll animate libra js -->
+  <!-- https://github.com/michalsnik/aos.git -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

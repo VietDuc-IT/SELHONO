@@ -1,0 +1,37 @@
+@import "./abstracts/variable";
+
+// base
+@import "./base/font";
+@import "./base/reset";
+@import "./abstracts/minxin";
+@import "./base/global";
+@import "./base/animate";
+
+// components
+@import "./components/button";
+@import "./components/form";
+@import "./components/breadcrumb";
+@import "./components/pagination";
+@import "./components/search";
+
+// Layout
+@import "./layout/loading";
+@import "./layout/header";
+@import "./layout/footer"; 
+
+// pages layout
+@import "./pages/home";
+@import "./pages/aboutUs";
+@import "./pages/services";
+@import "./pages/servicesSingle";
+@import "./pages/pricing";
+@import "./pages/project";
+@import "./pages/projectDetails";
+@import "./pages/blog";
+@import "./pages/blogDetails";
+@import "./pages/team";
+@import "./pages/teamSingle";
+@import "./pages/page404";
+@import "./pages/contactUs";
+@import "./pages/FAQ";
+@import "./pages/testSlider";
