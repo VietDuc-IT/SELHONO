@@ -8,5 +8,5 @@ Open with Live Server
 
 ### `Build`
 
-`Vercel` : [https://selhono-puce.vercel.app/](https://selhono-puce.vercel.app/)\
+`Vercel` : [https://selhono-puce.vercel.app/](https://selhono-nine.vercel.app/)\
 `Github` : [https://vietduc-it.github.io/SELHONO/](https://vietduc-it.github.io/SELHONO/)
